@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    color: bisque;
+}
+
+#form input {
+    margin: 20px;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 25px;
+    outline: none;
+}
+
+#form input:hover {
+    border: 3px solid  rgb(77, 70, 84);
+}
+
+.card {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    border-radius: 20px;
+    background: #302f2f;
+    color: white;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1000px) {
+    .card {
+        width: 60vw;
+    }
+
+    #form input {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .card {
+        width: 70vw;
+    }
+
+    #form input {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+       width: 90vw;
+       font-size: xx-small;
+    }
+
+    #form input {
+        width: 90vw;
+    }
+
+    .info {
+        gap: 2px;
+    }
+    
+    .repos {
+        gap: 2px;
+    }
+}
+
+
+
+.avtar {
+    width: 120px;
+    border: 15px solid rgb(62, 56, 67);
+    border-radius: 50%;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.info {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.info li strong{
+    margin-left: 5px;
+}
+
+.repos {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.repos a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 12px 8px 12px;
+    border: 3px solid black;
+    border-radius: 14px;
+}
